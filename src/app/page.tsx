@@ -62,7 +62,7 @@ export default function Home() {
           <div className={`carousel-inner`}>
             {carouselItems.map((item, index) => (
               <div className={`carousel-item ${index === currentIndex ? 'active' : ''}`} key={index}>
-                <Image src={item.src} alt={item.alt} width={600} height={400} />
+                <Image className={'img-fluid'} src={item.src} alt={item.alt} width={600} height={400} />
                 <div className="carousel-caption d-none d-md-block">
                   <p>{item.caption}</p>
                 </div>
